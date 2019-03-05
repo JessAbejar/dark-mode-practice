@@ -24,29 +24,21 @@
     font-size: 72px;
 }
 
-i {
-    font-size: 100px;
-}
-
 button {
     font-weight: bold;
-    padding: 30px;
-    margin: 15px;
+    font-size: 24px;
+    padding: 0px 10px;
     border: 1px solid transparent;
-    border-radius: 50%;
-    box-shadow: 0px 0px 70px 10px rgba(0,0,0,0.14);
 }
 
 /* ====== BUTTON MODES ====== */
 
 .on {
-    display: visible;
     color: gray;
     background-color: white;
 }
 
 .off {
-    display: none;
     color: white;
     background-color: gray;
 }
