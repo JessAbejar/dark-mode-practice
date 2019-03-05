@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light-mode {
+    background-color: pink;
+  }
+  .dark-mode {
+    background-color: black;
+    color: pink;
+  }
+  
+  .heading-1 {
+    font-size: 72px;
+  }
+  
+  i {
+    font-size: 100px;
+  }
+  
+  button {
+    font-weight: bold;
+    padding: 30px;
+    margin: 15px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 70px 10px rgba(0,0,0,0.14);
+  }
+  
+  .on {
+    display: visible;
+    color: gray;
+    background-color: white;
+  }
+  
+  .off {
+    display: none;
+    color: white;
+    background-color: gray;
+  }
