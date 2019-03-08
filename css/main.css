@@ -7,19 +7,6 @@
     align-items: center;
 }
 
-/* ====== LIGHT & DARK MODES ====== */
-
-.light-mode {
-    background-color: pink;
-}
-
-.dark-mode {
-    background-color: black;
-    color: pink;
-}
-
-/* ====== STYLES ====== */
-
 .heading-1 {
     font-size: 72px;
     text-align: center;
@@ -33,14 +20,37 @@ button {
     border-radius: 100px;
 }
 
-/* ====== BUTTON MODES ====== */
+/* ====== LIGHT (DEFAULT) MODE ====== */
 
-.on {
+body {
+    transition: background-color 1s;
+    background-color: pink;
+}
+
+.btn {
+    color: white;
+    background-color: gray;
+    display: block;
+}
+
+/* ====== DARK (SECONDARY) MODE ====== */
+
+.dark-mode {
+    background-color: black;
+    color: pink;
+}
+
+.dark-mode .btn {
     color: gray;
     background-color: white;
 }
 
-.off {
-    color: white;
-    background-color: gray;
+#light-mode-btn,
+.dark-mode #dark-mode-btn {
+    display:none;
+}
+
+#dark-mode-btn,
+.dark-mode #light-mode-btn {
+    display:block;
 }
