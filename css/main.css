@@ -12,25 +12,11 @@
     text-align: center;
 }
 
-button {
-    font-weight: bold;
-    font-size: 24px;
-    padding: 0px 20px;
-    border: 1px solid transparent;
-    border-radius: 100px;
-}
-
 /* ====== LIGHT (DEFAULT) MODE ====== */
 
 body {
     transition: background-color 1s;
     background-color: pink;
-}
-
-.btn {
-    color: white;
-    background-color: gray;
-    display: block;
 }
 
 /* ====== DARK (SECONDARY) MODE ====== */
@@ -40,17 +26,43 @@ body {
     color: pink;
 }
 
+/* ====== BUTTON STYLES ====== */
+
+button {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0px 20px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+
+.btn {
+    color: white;
+    background-color: gray;
+    display: block;
+}
+
 .dark-mode .btn {
     color: gray;
     background-color: white;
 }
 
-#light-mode-btn,
-.dark-mode #dark-mode-btn {
-    display:none;
+/* ====== BUTTON DISPLAYS in LIGHT-MODE (DEFAULT) ====== */
+
+#dark-mode-btn {
+    display: block;
 }
 
-#dark-mode-btn,
+#light-mode-btn {
+    display: none;
+}
+
+/* ====== BUTTON DISPLAYS in DARK-MODE ====== */
+
 .dark-mode #light-mode-btn {
-    display:block;
+    display: block;
+}
+
+.dark-mode #dark-mode-btn {
+    display: none;
 }
