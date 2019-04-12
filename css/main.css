@@ -1,0 +1,68 @@
+/* ====== BASE ====== */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-1 {
+    font-size: 72px;
+    text-align: center;
+}
+
+/* ====== LIGHT (DEFAULT) MODE ====== */
+
+body {
+    transition: background-color 1s;
+    background-color: pink;
+}
+
+/* ====== DARK (SECONDARY) MODE ====== */
+
+.dark-mode {
+    background-color: black;
+    color: pink;
+}
+
+/* ====== BUTTON STYLES ====== */
+
+button {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0px 20px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+
+.btn {
+    color: white;
+    background-color: gray;
+    display: block;
+}
+
+.dark-mode .btn {
+    color: gray;
+    background-color: white;
+}
+
+/* ====== BUTTON DISPLAYS in LIGHT-MODE (DEFAULT) ====== */
+
+#dark-mode-btn {
+    display: block;
+}
+
+#light-mode-btn {
+    display: none;
+}
+
+/* ====== BUTTON DISPLAYS in DARK-MODE ====== */
+
+.dark-mode #light-mode-btn {
+    display: block;
+}
+
+.dark-mode #dark-mode-btn {
+    display: none;
+}
