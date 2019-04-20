@@ -1,9 +1,8 @@
-var body = document.querySelector('body');
-var btns = document.querySelectorAll('.btn');
+var body = document.getElementById('body');
+var btn = document.getElementById('color-theme-btn');
 
-function modeSwitch(){
+function colorThemeSwitch(){
     body.classList.toggle('dark-mode');
 }
 
-btns[0].addEventListener('click', modeSwitch);
-btns[1].addEventListener('click', modeSwitch)
+btn.addEventListener('click', colorThemeSwitch)
