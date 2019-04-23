@@ -1,6 +1,6 @@
 /* ====== BASE ====== */
 
-.flex {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .heading-1 {
-    font-size: 72px;
+    font-size: 4.5em;
     text-align: center;
 }
 
@@ -30,39 +30,36 @@ body {
 
 button {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5em;
     padding: 0px 20px;
     border: 1px solid transparent;
     border-radius: 100px;
-}
-
-.btn {
     color: white;
     background-color: gray;
     display: block;
 }
 
-.dark-mode .btn {
+.dark-mode button {
     color: gray;
     background-color: white;
 }
 
 /* ====== BUTTON DISPLAYS in LIGHT-MODE (DEFAULT) ====== */
 
-#dark-mode-btn {
+#switch-to-dark-btn {
     display: block;
 }
 
-#light-mode-btn {
+#switch-to-light-btn {
     display: none;
 }
 
 /* ====== BUTTON DISPLAYS in DARK-MODE ====== */
 
-.dark-mode #light-mode-btn {
-    display: block;
+.dark-mode #switch-to-dark-btn {
+    display: none;
 }
 
-.dark-mode #dark-mode-btn {
-    display: none;
+.dark-mode #switch-to-light-btn {
+    display: block;
 }
